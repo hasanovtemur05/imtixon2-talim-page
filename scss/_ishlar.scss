@@ -1,0 +1,79 @@
+.ishlar{
+    display: grid;
+    margin-top: 60px;
+    &__right{
+        display: grid;
+        gap: 30px;
+    }
+    &__cards{
+        display: grid;
+        gap: 20px;
+    }
+    &__card{
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        padding: 10px;
+        display: grid;
+        gap: 10px;
+    }
+    &__title{
+        font-size: 28px;
+        color: #2E3038;
+        font-family: "font2";
+    }
+    &__desc{
+        font-size: 13px;
+        color: #56585E;
+        font-family: "font1";
+    }
+    &__info{
+        font-size: 12px;
+        color: #828388;
+        font-family: "font2";
+    }
+}
+@media (min-width:768px){
+    .ishlar{
+        &__card{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 60px;
+            div{
+                height: 100%;
+                display: grid;
+                align-content: space-between;
+            }
+            &__desc{
+                font-size: 16px;
+            }
+            &__info{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (min-width:992px){
+    .ishlar{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        &__title{
+            font-size: 34px;
+        }
+    }
+}
+@media (min-width:1200px){
+    .ishlar{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        &__title{
+            font-size: 40px;
+        }
+        &__desc{
+            font-size: 20px;
+        }
+        &__card{
+            padding: 50px 100px;
+        }
+    }
+}
